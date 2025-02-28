@@ -6,7 +6,7 @@ class CurrencyC:
         self.root = root
         self.root.title("Currency Converter")
         self.root.geometry("300x250")
-
+        #new branch
         self.rates = {
             "USD": 1, "Euro": 0.96, "Yen": 150.55, "GBP": 0.79
         }
