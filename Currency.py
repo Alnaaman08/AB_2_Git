@@ -20,13 +20,13 @@ class CurrencyC:
                 "converted_label": "Converted: ",
                 "invalid_input": "Invalid input"
             },
-            "de": {
-                "enter_amount": "Betrag eingeben:",
-                "from_label": "Von:",
+            "jp": {
+                "enter_amount": "金額を入力:",
+                "from_label": "から:",
                 "to_label": "Nach:",
-                "convert_button": "Konvertieren",
-                "converted_label": "Umgewandelt: ",
-                "invalid_input": "Ungültige Eingabe"
+                "convert_button": "変換する",
+                "converted_label": "変換された: ",
+                "invalid_input": "無効な入力"
             }
         }
 
@@ -78,14 +78,14 @@ class CurrencyC:
         return amount
 
     def change_language(self):
-        self.language = "de" if self.language == "en" else "en"
+        self.language = "jp" if self.language == "en" else "en"
 
         self.label.config(text=self.texts[self.language]["enter_amount"])
         self.from_label.config(text=self.texts[self.language]["from_label"])
         self.to_label.config(text=self.texts[self.language]["to_label"])
         self.button.config(text=self.texts[self.language]["convert_button"])
         self.result_label.config(text="")
-        self.language_button.config(text="Change Language")
+        self.language_button.config(text="言語を変更")
 
 if __name__ == "__main__":
     root = tk.Tk()
